@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Вишняков](https://up.htmlacademy.ru/adaptive/15/user/505929).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Русаков](https://htmlacademy.ru/profile/id6302).
 
 ---
 
