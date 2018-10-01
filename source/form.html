@@ -7,28 +7,29 @@
 </head>
 
 <body>
+
   <header class="page-header">
     <a class="page-header__logo">
       <img class="page-header__logo-image" src="http://placehold.it/50x20" alt="Pink Logo">
     </a>
     <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-navigation__list site-list">
-        <li class="site-list__item">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item site-list__item--active">
-          <a>Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul>
+      <button class="main-navigation__toggle" type="button">Открыть меню</button>
+      <div class="main-navigation__list">
+        <ul class="site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -40,65 +41,65 @@
       </p>
       <label>
         <span class="contest-form__option-title">Фамилия: </span>
-        <input class="contest-form__text-input" type="text" placeholder="Укажите фамилию *">
+        <input class="contest-form__text-input input-text" type="text" placeholder="Укажите фамилию *">
       </label>
       <label>
         <span class="contest-form__option-title">Имя: </span>
-        <input class="contest-form__text-input" type="text" placeholder="Введите ваше имя *">
+        <input class="contest-form__text-input input-text" type="text" placeholder="Введите ваше имя *">
       </label>
       <label>
         <span class="contest-form__option-title">Отчество: </span>
-        <input class="contest-form__text-input" type="text" placeholder="Ну и отчество тоже">
+        <input class="contest-form__text-input input-text" type="text" placeholder="Ну и отчество тоже">
       </label>
       <fieldset class="contest-form__achievments">
         <legend>Ваши безбашенные достижения в путешествии</legend>
         <label>
-          <input class="contest-form__checkbox-input" type="checkbox" checked>
+          <input class="contest-form__checkbox-input input-checkbox" type="checkbox" checked>
           <span class="contest-form__option-title">Сделал селфи с акулой</span>
         </label>
         <label>
-          <input class="contest-form__checkbox-input" type="checkbox" checked>
+          <input class="contest-form__checkbox-input input-checkbox" type="checkbox" checked>
           <span class="contest-form__option-title">Обгорел на пляже</span>
         </label>
         <label>
-          <input class="contest-form__checkbox-input" type="checkbox">
+          <input class="contest-form__checkbox-input input-checkbox" type="checkbox">
           <span class="contest-form__option-title">Видел Чака Норриса</span>
         </label>
         <label>
-          <input class="contest-form__checkbox-input" type="checkbox">
+          <input class="contest-form__checkbox-input input-checkbox" type="checkbox">
           <span class="contest-form__option-title">Накупил сувениров</span>
         </label>
         <label>
-          <input class="contest-form__checkbox-input" type="checkbox" checked>
+          <input class="contest-form__checkbox-input input-checkbox" type="checkbox" checked>
           <span class="contest-form__option-title">Удержал башню</span>
         </label>
         <label>
-          <input class="contest-form__checkbox-input" type="checkbox">
+          <input class="contest-form__checkbox-input input-checkbox" type="checkbox">
           <span class="contest-form__option-title">Разгромил отель</span>
         </label>
       </fieldset>
       <fieldset class="contest-form__contacts">
         <label>
           <span class="contest-form__option-title">Номер телефона</span>
-          <input class="contest-form__text-input" type="text" placeholder="Номер, пожалуйста">
+          <input class="contest-form__text-input input-text" type="text" placeholder="Номер, пожалуйста">
         </label>
         <label>
           <span class="contest-form__option-title">Адрес почты</span>
-          <input class="contest-form__text-input" type="text" placeholder="Введите почту *">
+          <input class="contest-form__text-input input-text" type="text" placeholder="Введите почту *">
         </label>
       </fieldset>
       <fieldset class="contest-form__os-type">
         <legend>С каким приложением путешествовали?</legend>
         <label>
-          <input class="contest-form__radio-input" type="radio" name="os-type" value="iOS" checked>
+          <input class="contest-form__radio-input input-radio" type="radio" name="os-type" value="iOS" checked>
           <span class="contest-form__option-title">Pink для iOS</span>
         </label>
         <label>
-          <input class="contest-form__radio-input" type="radio" name="os-type" value="Android">
+          <input class="contest-form__radio-input input-radio" type="radio" name="os-type" value="Android">
           <span class="contest-form__option-title">Pink для Android</span>
         </label>
         <label>
-          <input class="contest-form__radio-input" type="radio" name="os-type" value="Windows">
+          <input class="contest-form__radio-input input-radio" type="radio" name="os-type" value="Windows">
           <span class="contest-form__option-title">Windows Phone</span>
         </label>
       </fieldset>
@@ -106,7 +107,7 @@
         <legend>Опишите свои эмоции</legend>
         <textarea class="contest-form__comment-field">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
-      <button class="contest-form__send-btn" type="button">Отправить форму</button>
+      <button class="contest-form__send-btn button" type="button">Отправить форму</button>
       <p>* - обязательные поля</p>
     </form>
   </main>
@@ -117,18 +118,18 @@
         <img class="page-footer__logo-image" src="https://placehold.it/50x50" alt="Pink Logo">
       </a>
       <div class="page-footer__social social-links">
-        <a href="" class="social-links__link social-links__link--twitter">
+        <a href="#" class="social-links__link social-btn social-btn--twitter">
           <span class="visually-hidden">Twitter</span>
         </a>
-        <a href="" class="social-links__link social-links__link--facebook">
+        <a href="#" class="social-links__link social-btn social-btn--facebook">
           <span class="visually-hidden">Facebook</span>
         </a>
-        <a href="" class="social-links__link social-links__link--youtube">
+        <a href="#" class="social-links__link social-btn social-btn--youtube">
           <span class="visually-hidden">Youtube</span>
         </a>
       </div>
     </div>
-    <a class="page-footer__copyright" href="https://htmlacademy.ru">
+    <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
       Разработано
       <img class="page-footer__htmlacademy" src="https://placehold.it/20x20" alt="HTML Academy">
     </a>
