@@ -39,75 +39,101 @@
       <p class="contest-form__title">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
       </p>
-      <label>
-        <span class="contest-form__option-title">Фамилия: </span>
-        <input class="contest-form__text-input input-text" type="text" placeholder="Укажите фамилию *">
-      </label>
-      <label>
-        <span class="contest-form__option-title">Имя: </span>
-        <input class="contest-form__text-input input-text" type="text" placeholder="Введите ваше имя *">
-      </label>
-      <label>
-        <span class="contest-form__option-title">Отчество: </span>
-        <input class="contest-form__text-input input-text" type="text" placeholder="Ну и отчество тоже">
-      </label>
+      <div class="field-text">
+        <label class="field-text__name">
+          <span class="field-text__text">Фамилия: </span>
+          <input class="field-text__input" type="text" placeholder="Укажите фамилию *">
+        </label>
+      </div>
+      <div class="field-text">
+        <label class="field-text__name">
+          <span class="field-text__text">Имя: </span>
+          <input class="field-text__input" type="text" placeholder="Введите ваше имя *">
+        </label>
+      </div>
+      <div class="field-text">
+        <label class="field-text__name">
+          <span class="field-text__text">Отчество: </span>
+          <input class="field-text__input" type="text" placeholder="Ну и отчество тоже">
+        </label>
+      </div>
       <fieldset class="contest-form__achievments">
         <legend>Ваши безбашенные достижения в путешествии</legend>
-        <label>
-          <input class="contest-form__checkbox-input input-checkbox" type="checkbox" checked>
-          <span class="contest-form__option-title">Сделал селфи с акулой</span>
-        </label>
-        <label>
-          <input class="contest-form__checkbox-input input-checkbox" type="checkbox" checked>
-          <span class="contest-form__option-title">Обгорел на пляже</span>
-        </label>
-        <label>
-          <input class="contest-form__checkbox-input input-checkbox" type="checkbox">
-          <span class="contest-form__option-title">Видел Чака Норриса</span>
-        </label>
-        <label>
-          <input class="contest-form__checkbox-input input-checkbox" type="checkbox">
-          <span class="contest-form__option-title">Накупил сувениров</span>
-        </label>
-        <label>
-          <input class="contest-form__checkbox-input input-checkbox" type="checkbox" checked>
-          <span class="contest-form__option-title">Удержал башню</span>
-        </label>
-        <label>
-          <input class="contest-form__checkbox-input input-checkbox" type="checkbox">
-          <span class="contest-form__option-title">Разгромил отель</span>
-        </label>
+        <div class="field-checkbox">
+          <label class="field-checkbox__name">
+            <input class="field-checkbox__input" type="checkbox" checked>
+            <span class="field-checkbox__text">Сделал селфи с акулой</span>
+          </label>
+        </div>
+        <div class="field-checkbox">
+          <label class="field-checkbox__name">
+            <input class="field-checkbox__input" type="checkbox" checked>
+            <span class="field-checkbox__text">Обгорел на пляже</span>
+          </label>
+        </div>
+        <div class="field-checkbox">
+          <label class="field-checkbox__name">
+            <input class="field-checkbox__input" type="checkbox">
+            <span class="field-checkbox__text">Видел Чака Норриса</span>
+          </label>
+        </div>
+        <div class="field-checkbox">
+          <label class="field-checkbox__name">
+            <input class="field-checkbox__input" type="checkbox">
+            <span class="field-checkbox__text">Накупил сувениров</span>
+          </label>
+        </div>
+        <div class="field-checkbox">
+          <label class="field-checkbox__name">
+            <input class="field-checkbox__input" type="checkbox" checked>
+            <span class="field-checkbox__text">Удержал башню</span>
+          </label>
+        </div>
+        <div class="field-checkbox">
+          <label class="field-checkbox__name">
+            <input class="field-checkbox__input" type="checkbox">
+            <span class="field-checkbox__text">Разгромил отель</span>
+          </label>
+        </div>
       </fieldset>
       <fieldset class="contest-form__contacts">
-        <label>
-          <span class="contest-form__option-title">Номер телефона</span>
-          <input class="contest-form__text-input input-text" type="text" placeholder="Номер, пожалуйста">
+        <label class="field-text__name">
+          <span class="field-text__text">Номер телефона</span>
+          <input class="field-text__input" type="text" placeholder="Номер, пожалуйста">
         </label>
-        <label>
-          <span class="contest-form__option-title">Адрес почты</span>
-          <input class="contest-form__text-input input-text" type="text" placeholder="Введите почту *">
+        <label class="field-text__name">
+          <span class="field-text__text">Адрес почты</span>
+          <input class="field-text__input" type="text" placeholder="Введите почту *">
         </label>
       </fieldset>
       <fieldset class="contest-form__os-type">
         <legend>С каким приложением путешествовали?</legend>
-        <label>
-          <input class="contest-form__radio-input input-radio" type="radio" name="os-type" value="iOS" checked>
-          <span class="contest-form__option-title">Pink для iOS</span>
-        </label>
-        <label>
-          <input class="contest-form__radio-input input-radio" type="radio" name="os-type" value="Android">
-          <span class="contest-form__option-title">Pink для Android</span>
-        </label>
-        <label>
-          <input class="contest-form__radio-input input-radio" type="radio" name="os-type" value="Windows">
-          <span class="contest-form__option-title">Windows Phone</span>
-        </label>
+        <div class="field-radio">
+          <label class="field-radio__name">
+            <input class="field-radio__input" type="radio" name="os-type" value="iOS" checked>
+            <span class="field-radio__text">Pink для iOS</span>
+          </label>
+        </div>
+        <div class="field-radio">
+          <label class="field-radio__name">
+            <input class="field-radio__input" type="radio" name="os-type" value="Android">
+            <span class="field-radio__text">Pink для Android</span>
+          </label>
+        </div>
+        <div class="field-radio">
+          <label class="field-radio__name">
+            <input class="field-radio__input" type="radio" name="os-type" value="Windows">
+            <span class="field-radio__text">Windows Phone</span>
+          </label>
+        </div>
       </fieldset>
       <fieldset class="contest-form__comment">
         <legend>Опишите свои эмоции</legend>
-        <textarea class="contest-form__comment-field">Можно прям в красках, не стесняясь в выражениях</textarea>
+        <div class="field-textarea">
+          <textarea class="field-textarea__input">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </div>
       </fieldset>
-      <button class="contest-form__send-btn button" type="button">Отправить форму</button>
+      <button class="contest-form__send-btn button" type="submit">Отправить форму</button>
       <p>* - обязательные поля</p>
     </form>
   </main>
