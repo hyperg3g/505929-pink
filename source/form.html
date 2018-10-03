@@ -4,29 +4,30 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/50x20" alt="Pink Logo">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Pink Logo">
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">Открыть меню</button>
       <div class="main-navigation__list">
         <ul class="site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a>Конкурс</a>
+            <a class="site-list__link">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -34,7 +35,9 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <div class="page-main__title-wrap">
+      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
     <form class="contest-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="contest-form__title">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
@@ -58,7 +61,7 @@
         </label>
       </div>
       <fieldset class="contest-form__achievments">
-        <legend>Ваши безбашенные достижения в путешествии</legend>
+        <legend class="contest-form__legend">Ваши безбашенные достижения в путешествии</legend>
         <div class="field-checkbox">
           <label class="field-checkbox__name">
             <input class="field-checkbox__input" type="checkbox" checked>
@@ -107,7 +110,7 @@
         </label>
       </fieldset>
       <fieldset class="contest-form__os-type">
-        <legend>С каким приложением путешествовали?</legend>
+        <legend class="contest-form__legend">С каким приложением путешествовали?</legend>
         <div class="field-radio">
           <label class="field-radio__name">
             <input class="field-radio__input" type="radio" name="os-type" value="iOS" checked>
@@ -128,20 +131,20 @@
         </div>
       </fieldset>
       <fieldset class="contest-form__comment">
-        <legend>Опишите свои эмоции</legend>
+        <legend class="contest-form__legend">Опишите свои эмоции</legend>
         <div class="field-textarea">
           <textarea class="field-textarea__input">Можно прям в красках, не стесняясь в выражениях</textarea>
         </div>
       </fieldset>
       <button class="contest-form__send-btn button" type="submit">Отправить форму</button>
-      <p>* - обязательные поля</p>
+      <p class="contest-form__note"><span class="contest-form__mark">*</span> — обязательные поля</p>
     </form>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__wrap">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="https://placehold.it/50x50" alt="Pink Logo">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="Pink Logo">
       </a>
       <div class="page-footer__social social-links">
         <a href="#" class="social-links__link social-btn social-btn--twitter">
@@ -157,7 +160,7 @@
     </div>
     <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
       Разработано
-      <img class="page-footer__htmlacademy" src="https://placehold.it/20x20" alt="HTML Academy">
+      <img class="page-footer__htmlacademy" src="img/logo-htmlacademy.svg" width="27" height="35" alt="HTML Academy">
     </a>
   </footer>
 

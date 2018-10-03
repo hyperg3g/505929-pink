@@ -4,29 +4,30 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/50x20" alt="Pink Logo">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Pink Logo">
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button">Открыть меню</button>
       <div class="main-navigation__list">
         <ul class="site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a>Фотографии</a>
+            <a class="site-list__link">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+            <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -34,13 +35,16 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page_main__title">Фотографии пользователей</h1>
+    <div class="page-main__title-wrap">
+      <h1 class="page-main__title">Фотографии пользователей</h1>
+    </div>
     <section class="gallery">
-      <h2 class="gallery__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
-        ваших?</h2>
+      <h2 class="gallery__title">
+        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+      </h2>
       <ul class="gallery__list">
         <li class="gallery__item">
-          <img class="gallery__photo gallery__photo--day-photo" src="https://placehold.it/30x60" alt="User photo">
+          <img class="gallery__photo gallery__photo--day-photo" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="User photo">
           <article class="user-post">
             <h3 class="user-post__title">
               Анна
@@ -54,7 +58,7 @@
           </article>
         </li>
         <li class="gallery__item">
-          <img class="gallery__photo" src="https://placehold.it/30x60" alt="User photo">
+          <img class="gallery__photo" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="User photo">
           <article class="user-post">
             <h3 class="user-post__title">
               Левон
@@ -67,7 +71,7 @@
           </article>
         </li>
         <li class="gallery__item">
-          <img class="gallery__photo" src="https://placehold.it/30x60" alt="User photo">
+          <img class="gallery__photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="User photo">
           <article class="user-post">
             <h3 class="user-post__title">
               Антон
@@ -80,7 +84,7 @@
           </article>
         </li>
         <li class="gallery__item">
-          <img class="gallery__photo" src="https://placehold.it/30x60" alt="User photo">
+          <img class="gallery__photo" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="User photo">
           <article class="user-post">
             <h3 class="user-post__title">
               Борис
@@ -93,7 +97,7 @@
           </article>
         </li>
         <li class="gallery__item">
-          <img class="gallery__photo" src="https://placehold.it/30x60" alt="User photo">
+          <img class="gallery__photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="User photo">
           <article class="user-post">
             <h3 class="user-post__title">
               Сергей
@@ -106,7 +110,7 @@
           </article>
         </li>
         <li class="gallery__item">
-          <img class="gallery__photo" src="https://placehold.it/30x60" alt="User photo">
+          <img class="gallery__photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="User photo">
           <article class="user-post">
             <h3 class="user-post__title">
               Максим
@@ -119,7 +123,7 @@
           </article>
         </li>
         <li class="gallery__item">
-          <img class="gallery__photo" src="https://placehold.it/30x60" alt="User photo">
+          <img class="gallery__photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="User photo">
           <article class="user-post">
             <h3 class="user-post__title">
               Надежда
@@ -136,7 +140,7 @@
     <section class="photo-editor">
       <h2 class="photo-editor__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
       <div class="photo-editor__wrap">
-        <img class="photo-editor__photo" src="https://placehold.it/40x70" alt="Your photo">
+        <img class="photo-editor__photo" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Your photo">
         <div class="photo-editor__tool-panel">
           <button class="photo-editor__tool photo-editor__tool--crop" type="button">Crop</button>
           <button class="photo-editor__tool photo-editor__tool--fill" type="button">Fill</button>
@@ -152,7 +156,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrap">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="https://placehold.it/50x50" alt="Pink Logo">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="Pink Logo">
       </a>
       <div class="page-footer__social social-links">
         <a href="#" class="social-links__link social-btn social-btn--twitter">
@@ -168,7 +172,7 @@
     </div>
     <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
       Разработано
-      <img class="page-footer__htmlacademy" src="https://placehold.it/20x20" alt="HTML Academy">
+      <img class="page-footer__htmlacademy" src="img/logo-htmlacademy.svg" width="27" height="35" alt="HTML Academy">
     </a>
   </footer>
 
