@@ -1,3 +1,7 @@
+@import url("common styles/fonts.less");
+@import url("common styles/variables.less");
+@import url("common styles/common.less");
+@import url("common styles/mixins.less");
 @import url("page-header/page-header.less");
 @import url("main-navigation/main-navigation.less");
 @import url("site-list/site-list.less");
@@ -18,58 +22,3 @@
 @import url("page-footer/page-footer.less");
 @import url("modal-success/modal-success.less");
 @import url("modal-fail/modal-fail.less");
-
-@font-face {
-  font-family: "Open Sans";
-  src:
-    url("../fonts/opensans.woff") format("woff"),
-    url("../fonts/opensans.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src:
-    url("../fonts/opensansbold.woff") format("woff"),
-    url("../fonts/opensansbold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src:
-    url("../fonts/opensanslight.woff") format("woff"),
-    url("../fonts/opensanslight.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-}
-
-body,
-html {
-  margin: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-}
-
-.list-reset() {
-  list-style: none;
-}
-
-// .visually-hidden:not(:focus):not(:active),
-// input[type="checkbox"].visually-hidden,
-// input[type="radio"].visually-hidden {
-//     position: absolute;
-
-//     width: 1px;
-//     height: 1px;
-//     margin: -1px;
-//     border: 0;
-//     padding: 0;
-
-//     white-space: nowrap;
-
-//     clip-path: inset(100%);
-//     clip: rect(0 0 0 0);
-//     overflow: hidden;
-// }
