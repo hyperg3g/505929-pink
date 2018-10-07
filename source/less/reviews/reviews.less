@@ -1,9 +1,21 @@
+.reviews {
+  width: 280px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
 .reviews__list {
   .list-reset();
 }
 
 .reviews__quote {
   margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .reviews__author {
@@ -14,8 +26,42 @@
   color: #000000;
 }
 
+.reviews__author-prof {
+  font-size: 14px;
+  line-height: 30px;
+  color: @text-color;
+}
+
 .reviews__text {
   font-size: 14px;
   line-height: 30px;
   color: @text-color;
+}
+
+.reviews__toggles {
+  align-self: center;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    width: 620px;
+  }
+
+  .reviews__author {
+    order: 2;
+  }
+
+  .reviews__author-prof {
+    order: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    width: 940px;
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
 }

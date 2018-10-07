@@ -1,10 +1,48 @@
 .gallery__title {
+  width: 280px;
+  margin: 0 auto;
+
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: @text-color;
+  text-align: center;
 }
 
 .gallery__list {
   .list-reset();
+
+  width: 280px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__photo--day-top {
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__title {
+    width: 455px;
+  }
+
+  .gallery__list {
+    width: 620px;
+
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__title {
+    width: 600px;
+  }
+
+  .gallery__list {
+    width: 940px;
+  }
 }

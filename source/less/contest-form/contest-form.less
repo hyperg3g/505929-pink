@@ -1,7 +1,11 @@
 .contest-form__title {
+  width: 280px;
+  margin: 0 auto;
+
   font-size: 14px;
   line-height: 30px;
   color: @text-color;
+  text-align: center;
 }
 
 .contest-form__legend {
@@ -11,12 +15,8 @@
   text-transform: uppercase;
 }
 
-.contest-form__achievments {
-  background-color: #f2f2f2;
-}
-
-.contest-form__os-type {
-  background-color: #f2f2f2;
+.contest-form__legend--hidden {
+  display: none;
 }
 
 .contest-form__note {
@@ -28,4 +28,132 @@
 
 .contest-form__mark {
   color: @text-color-secondary;
+}
+
+.contest-form__wrap-self {
+  background-color: #f2f2f2;
+}
+
+.contest-form__name,
+.contest-form__achievments,
+.contest-form__contacts,
+.contest-form__os-type,
+.contest-form__comment,
+.contest-form__send {
+  width: 280px;
+  margin: 0 auto;
+  border: none;
+}
+
+.contest-form__wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-form__order-1 {
+  order: 1;
+}
+
+.contest-form__order-2 {
+  order: 4;
+}
+
+.contest-form__order-3 {
+  order: 3;
+}
+
+.contest-form__order-4 {
+  order: 2;
+}
+
+.contest-form__order-5 {
+  order: 5;
+}
+
+.contest-form__order-6 {
+  order: 6;
+}
+
+@media (min-width: @tablet-width) {
+  .contest-form__title {
+    width: 502px;
+  }
+
+  .contest-form__wrap-self {
+    width: auto;
+    background-color: #ffffff;
+  }
+
+  .contest-form__wrap {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .contest-form__name,
+  .contest-form__achievments,
+  .contest-form__contacts,
+  .contest-form__os-type,
+  .contest-form__comment {
+    width: auto;
+    margin: 0;
+    border: 2px solid #e5e5e5;
+  }
+
+  .contest-form__order-1,
+  .contest-form__order-2,
+  .contest-form__order-3,
+  .contest-form__order-4,
+  .contest-form__order-5,
+  .contest-form__order-6 {
+    order: 0;
+  }
+
+  .contest-form__send {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contest-form__legend--hidden {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest-form__title {
+    width: 770px;
+  }
+
+  .contest-form__wrap {
+    width: 940px;
+
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .contest-form__name {
+    width: 430px;
+  }
+
+  .contest-form__os-type {
+    width: 430px;
+  }
+
+  .contest-form__contacts {
+    width: 100%;
+  }
+
+  .contest-form__achievments {
+    width: 912px;
+  }
+
+  .contest-form__comment {
+    width: 100%;
+  }
+}
+
+.contest-form__name {
+  border: none;
 }

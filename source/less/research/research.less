@@ -1,0 +1,54 @@
+.research {
+  display: none;
+}
+
+.research__wrap {
+  width: 620px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.research__wrap-text {
+  width: 310px;
+}
+
+.research__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.research__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: @text-color;
+}
+
+.research__more {
+  font-size: 14px;
+  line-height: 24px;
+  color: @text-color-secondary;
+}
+
+@media (min-width: @tablet-width) {
+  .research {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research {
+    background-color: #f2f2f2;
+  }
+
+  .research__wrap {
+    width: 940px;
+  }
+
+  .research__wrap-text {
+    width: 570px;
+  }
+}

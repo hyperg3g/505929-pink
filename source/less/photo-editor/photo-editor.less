@@ -3,4 +3,42 @@
   line-height: 30px;
   font-weight: 400;
   color: @text-color;
+  text-align: center;
+}
+
+.photo-editor__wrap {
+  background-color: #f2f2f2;
+}
+
+.photo-editor__panel {
+  width: 280px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-editor__panel {
+    width: 620px;
+
+    flex-direction: row;
+  }
+
+  .photo-editor__tool-panel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-editor__confirm-panel {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-editor__panel {
+    width: 940px;
+    justify-content: center;
+  }
 }

@@ -1,5 +1,20 @@
+.price {
+  display: none;
+  background-color: #f2f2f2;
+}
+
+.price__table {
+  border-collapse: collapse;
+}
+
 .price__package {
+  border: 2px solid #e5e5e5;
   background-color: #283645;
+}
+
+.price__package--empty {
+  visibility: hidden;
+  border: none;
 }
 
 .price__package-title {
@@ -17,9 +32,36 @@
   color: #ffffff;
 }
 
-.price__option-title {
+.price__value {
   font-size: 14px;
   line-height: 30px;
   color: @text-color;
   text-transform: uppercase;
+}
+
+.price__table-body tr,
+.price__table-body td {
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .price {
+    display: block;
+  }
+
+  .price__wrap {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .price__value--empty {
+    font-size: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price__wrap {
+    width: 940px;
+  }
 }

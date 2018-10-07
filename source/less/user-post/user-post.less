@@ -1,5 +1,11 @@
 .user-post {
+  width: 280px;
   background-color: #f2f2f2;
+}
+
+.user-post--day-top {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .user-post__title {
@@ -28,4 +34,20 @@
   line-height: 24px;
   color: @text-color-secondary;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .user-post {
+    width: 300px;
+  }
+
+  .user-post--day-top {
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-post--day-top {
+    width: 940px;
+  }
 }
