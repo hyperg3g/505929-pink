@@ -7,6 +7,30 @@
   background-color: #283645;
 }
 
+.page-header__wrap {
+  width: 280px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+
+    flex-direction: row;
+  }
+}
+
 .page-header__logo {
+  min-height: 66px;
+
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    min-height: 110px;
+  }
 }

@@ -1,13 +1,24 @@
 .page-main__title-wrap {
   background-color: #283645;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
   min-height: 462px;
 }
 
 .page-main__title {
+  width: 280px;
+  margin: 0 auto;
+
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
   color: #ffffff;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 502px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 750px;
+  }
 }

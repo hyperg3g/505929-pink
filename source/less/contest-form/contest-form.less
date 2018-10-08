@@ -1,7 +1,19 @@
 .contest-form__title {
+  width: 280px;
+  margin: 0 auto;
+
   font-size: 14px;
   line-height: 30px;
   color: @text-color;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 502px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 770px;
+  }
 }
 
 .contest-form__legend {
@@ -11,12 +23,12 @@
   text-transform: uppercase;
 }
 
-.contest-form__achievments {
-  background-color: #f2f2f2;
-}
+.contest-form__legend--hidden {
+  display: none;
 
-.contest-form__os-type {
-  background-color: #f2f2f2;
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
 }
 
 .contest-form__note {
@@ -28,4 +40,100 @@
 
 .contest-form__mark {
   color: @text-color-secondary;
+}
+
+.contest-form__wrap-self {
+  background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    background-color: #ffffff;
+  }
+}
+
+.contest-form--mobile-view {
+  width: 280px;
+  margin: 0 auto;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    margin: 0;
+    border: 2px solid #e5e5e5;
+  }
+}
+
+.contest-form__wrap {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.contest-form__name--order {
+  order: -3;
+}
+
+.contest-form__achievments--order {
+  order: -2;
+}
+
+.contest-form__contacts--order {
+  order: -1;
+}
+
+.contest-form__send {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    border: none;
+  }
+}
+
+.contest-form__name--order,
+.contest-form__achievments--order,
+.contest-form__contacts--order {
+  @media (min-width: @tablet-width) {
+    order: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest-form__name {
+    width: 430px;
+  }
+
+  .contest-form__os-type {
+    width: 430px;
+  }
+
+  .contest-form__contacts {
+    width: 100%;
+  }
+
+  .contest-form__achievments {
+    width: 912px;
+  }
+
+  .contest-form__comment {
+    width: 100%;
+  }
+}
+
+.contest-form__name {
+  border: none;
 }

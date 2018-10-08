@@ -1,9 +1,67 @@
 .intro {
   background-color: #1d2631;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+
+  @media (min-width: @tablet-width) {
+    min-height: 618px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 743px;
+  }
+}
+
+.intro__wrap {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.intro__downloads {
+  background-color: #1d2631;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+
+    background-color: transparent;
+  }
+}
+
+.intro__center {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.intro__title {
+  display: none;
+
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 300;
+  color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
 }
 
 .intro__link-list {
   .list-reset();
+
+  display: flex;
+  flex-direction: row;
 }
 
 .intro__link {

@@ -1,5 +1,13 @@
 .site-list {
   .list-reset();
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    min-height: 110px;
+    flex-direction: row;
+  }
 }
 
 .site-list__link {
@@ -10,4 +18,10 @@
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.site-list__item {
+  @media (min-width: @desktop-width) {
+    margin-right: 10px;
+  }
 }
