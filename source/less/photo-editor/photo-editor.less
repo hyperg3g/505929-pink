@@ -16,29 +16,29 @@
 
   display: flex;
   flex-direction: column;
-}
 
-@media (min-width: @tablet-width) {
-  .photo-editor__panel {
+  @media (min-width: @tablet-width) {
     width: 620px;
 
     flex-direction: row;
   }
 
-  .photo-editor__tool-panel {
-    display: flex;
-    flex-direction: column;
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    justify-content: center;
   }
+}
 
-  .photo-editor__confirm-panel {
+.photo-editor__tool-panel {
+  @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .photo-editor__panel {
-    width: 940px;
-    justify-content: center;
+.photo-editor__confirm-panel {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
   }
 }

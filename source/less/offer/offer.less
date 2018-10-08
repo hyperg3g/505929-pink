@@ -4,6 +4,14 @@
 
   display: flex;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
 }
 
 .offer__text {
@@ -11,16 +19,4 @@
   line-height: 29px;
   font-weight: 300;
   color: @text-color;
-}
-
-@media (min-width: @tablet-width) {
-  .offer {
-    width: 620px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .offer {
-    width: 940px;
-  }
 }

@@ -1,5 +1,13 @@
 .research {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .research__wrap {
@@ -8,10 +16,18 @@
 
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
 }
 
 .research__wrap-text {
   width: 310px;
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
 }
 
 .research__title {
@@ -31,24 +47,4 @@
   font-size: 14px;
   line-height: 24px;
   color: @text-color-secondary;
-}
-
-@media (min-width: @tablet-width) {
-  .research {
-    display: block;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .research {
-    background-color: #f2f2f2;
-  }
-
-  .research__wrap {
-    width: 940px;
-  }
-
-  .research__wrap-text {
-    width: 570px;
-  }
 }

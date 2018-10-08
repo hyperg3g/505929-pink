@@ -10,6 +10,12 @@
 
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .contacts__text {
@@ -26,14 +32,8 @@
   color: #d22856;
 }
 
-@media (min-width: @tablet-width) {
-  .contacts__list {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .contacts__item {
+.contacts__item {
+  @media (min-width: @tablet-width) {
     width: 300px;
   }
 }

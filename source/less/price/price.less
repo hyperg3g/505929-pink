@@ -1,10 +1,22 @@
 .price {
-  display: none;
   background-color: #f2f2f2;
 }
 
+.price__wrap {
+  width: 280px;
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+
 .price__table {
+  width: 1120px;
   border-collapse: collapse;
+  transform: translateX(-280px);
+}
+
+.price__value {
+  width: 280px;
 }
 
 .price__package {
@@ -39,20 +51,22 @@
   text-transform: uppercase;
 }
 
-.price__table-body tr,
 .price__table-body td {
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
 }
 
 @media (min-width: @tablet-width) {
-  .price {
-    display: block;
-  }
-
   .price__wrap {
     width: 620px;
     margin: 0 auto;
+
+    overflow: visible;
+  }
+
+  .price__table {
+    width: 100%;
+    transform: translateX(0);
   }
 
   .price__value--empty {
