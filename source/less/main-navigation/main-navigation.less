@@ -10,7 +10,7 @@
 }
 
 .main-navigation--closed {
-  min-height: 0px;
+  min-height: 0;
 
   transition: all 100ms ease;
 
@@ -56,24 +56,22 @@
 
 .main-navigation--closed .main-navigation__toggle {
   &::before {
-  content: "";
+    content: "";
 
-  position: absolute;
-  top: 0;
-  left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  width: 50px;
-  height: 4px;
+    width: 50px;
+    height: 4px;
 
-  background-color: #ffffff;
-  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+    background-color: #ffffff;
+    box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
   }
 
   &:hover::before {
     background-color: #d22856;
-    box-shadow:
-      0 10px 0 0 rgb(210, 40 , 86),
-      0 20px 0 0 rgb(210, 40 , 86);
+    box-shadow: 0 10px 0 0 rgb(210, 40, 86), 0 20px 0 0 rgb(210, 40, 86);
   }
 
   &:active::before {
@@ -107,7 +105,7 @@
 
   &:hover::before,
   &:hover::after {
-    background-color: rgb(210, 40 , 86);
+    background-color: rgb(210, 40, 86);
   }
 
   &:active::before,

@@ -19,4 +19,3 @@ toggleBtn.addEventListener("click", function() {
     logo.classList.add("page-header__logo--closed");
   }
 });
-
