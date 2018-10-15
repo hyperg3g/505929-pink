@@ -1,36 +1,123 @@
 .page-header {
+  position: relative;
+
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
   color: #ffffff;
 
-  background-color: #283645;
+  @media (min-width: @desktop-width) {
+    background-color: rgba(40, 54, 69, 1);
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-position: center 0;
+
+    .page-header--bg {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
 }
 
 .page-header__wrap {
-  width: 280px;
-  margin: 0 auto;
+  position: absolute;
+
+  width: 100%;
 
   display: flex;
   flex-direction: column;
 
-  @media (min-width: @tablet-width) {
-    width: 620px;
-  }
+  z-index: 2;
 
   @media (min-width: @desktop-width) {
+    position: static;
     width: 940px;
+    margin: 0 auto;
 
+    justify-content: space-between;
     flex-direction: row;
   }
 }
 
 .page-header__logo {
-  min-height: 66px;
+  height: 46px;
+  padding-top: 22px;
+  padding-left: 20px;
 
-  cursor: pointer;
+  @media (max-width: @mobile-width-only), (max-width: @tablet-width-only)  {
+    &--closed {
+      transition: all 200ms ease;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &--opened {
+      background-color: rgba(40, 54, 69, 1);
+      border-bottom: 1px solid #000000;
+    }
+  }
 
   @media (min-width: @tablet-width) {
-    min-height: 110px;
+    height: 82px;
+    padding-top: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+.page-header__logo-image {
+  width: 75px;
+  height: 23px;
+}
+
+.page-header__wrap--nojs {
+  position: static;
+
+  background-color: #283645;
+}
+
+.page-header__title-wrap {
+  min-height: 142px;
+  padding-top: 95px;
+
+  background-color: #283645;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+
+  @media (min-width: @tablet-width) {
+    min-height: 260px;
+    padding-top: 180px;
+
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-position: center 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 220px;
+    padding-top: 64px;
+
+    background-image: none;
+    background-color: transparent;
+  }
+}
+
+.page-header__title {
+  width: 230px;
+  margin: 0 auto;
+
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 480px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 770px;
   }
 }

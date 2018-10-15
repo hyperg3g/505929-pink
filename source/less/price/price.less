@@ -1,5 +1,40 @@
 .price {
+  position: relative;
+
   background-color: #f2f2f2;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -65px;
+
+    width: 100%;
+    height: 100px;
+
+    transform: skewY(-6deg);
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      top: -64px;
+
+      height: 100px;
+
+      transform: skewY(-4.5deg);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      top: -109px;
+
+      height: 300px;
+
+      transform: skewY(-4.1deg);
+    }
+  }
 }
 
 .price__wrap {
@@ -7,17 +42,103 @@
   margin: 0 auto;
 
   overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    padding-bottom: 95px;
+    margin-bottom: 45px;
+
+    overflow: visible;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    margin-bottom: 65px;
+  }
 }
 
 .price__table {
   width: 1120px;
+
   border-collapse: collapse;
-  transform: translateX(-280px);
+  transform: translateX(-560px);
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    transform: translateX(0);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    margin-top: -36px;
+  }
 }
 
 .price__package {
-  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  padding: 0;
+
+  border-bottom: 2px solid #283645;
   background-color: #283645;
+
+  &:nth-child(2) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  &:nth-child(4) {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  &:nth-child(3) {
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 152px;
+    height: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 95px;
+  }
+}
+
+.price__package--hit {
+  position: relative;
+
+  background-image: url("../../img/bg-hit.svg");
+  background-size: 74px 73px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  &:after {
+    content: "ХИТ";
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    font-size: 14px;
+    line-height: 30px;
+    color: #ffffff;
+
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/bg-hit-tablet.svg");
+    background-size: 61px 61px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    &:after {
+      top: 5px;
+      left: 5px;
+    }
+  }
 }
 
 .price__package--empty {
@@ -26,52 +147,86 @@
 }
 
 .price__package-title {
+  display: block;
+
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .price__package-cost {
+  display: block;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.price__option {
+  padding: 0;
+  padding-left: 15px;
+
+  font-size: 14px;
+  line-height: 30px;
+  color: @text-color;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    width: 152px;
+    height: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 61px;
+    padding-left: 20px;
+
+    font-size: 18px;
+  }
 }
 
 .price__value {
+  padding: 0;
+
   font-size: 14px;
   line-height: 30px;
   color: @text-color;
   text-transform: uppercase;
-}
 
-.price__table-body td {
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
-}
 
-@media (min-width: @tablet-width) {
-  .price__wrap {
-    width: 620px;
-    margin: 0 auto;
-
-    overflow: visible;
+  &:first-child {
+    border-top: none;
   }
 
-  .price__table {
-    width: 100%;
-    transform: translateX(0);
-  }
-
-  .price__value--empty {
-    font-size: 0;
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    width: 152px;
+    height: 45px;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .price__wrap {
-    width: 940px;
+.price__value--empty {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.price__toggles {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }

@@ -12,13 +12,82 @@
 
 .research__wrap {
   width: 620px;
+  min-height: 276px;
   margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 67px;
 
   display: flex;
   justify-content: space-between;
 
   @media (min-width: @desktop-width) {
     width: 940px;
+    padding-bottom: 64px;
+  }
+}
+
+.research__image {
+  position: relative;
+
+  width: 239px;
+  height: 276px;
+
+  background-image: url("../../img/icon-timer.svg");
+  background-size: 239px 276px;
+
+  &::before {
+    content: "24";
+
+    position: absolute;
+    top: 75px;
+    left: 64px;
+
+    font-size: 96px;
+    line-height: 150px;
+    font-weight: 700;
+    color: @text-color-secondary;
+
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 54px;
+    left: 19px;
+
+    width: 172px;
+    height: 172px;
+    border: 15px solid @text-color-secondary;
+    border-radius: 50%;
+
+    z-index: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 298px;
+    height: 345px;
+
+    background-size: 298px 345px;
+
+    &::before {
+      top: 92px;
+      left: 80px;
+
+      font-size: 120px;
+      line-height: 187px;
+    }
+
+    &:after {
+      width: 214px;
+      height: 214px;
+
+      top: 66px;
+      left: 23px;
+
+      border: 20px solid @text-color-secondary;
+    }
   }
 }
 
@@ -26,25 +95,63 @@
   width: 310px;
 
   @media (min-width: @desktop-width) {
-    width: 570px;
+    width: 574px;
   }
 }
 
 .research__title {
+  width: 170px;
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 10px;
+
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   color: #000000;
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    margin-top: 90px;
+    margin-bottom: 25px;
+
+    line-height: 30px;
+
+    span {
+      display: none;
+    }
+  }
 }
 
 .research__text {
+  width: 300px;
+  margin: 0;
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 24px;
   color: @text-color;
+
+  @media (min-width: @desktop-width) {
+    width: 527px;
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    span {
+      display: none;
+    }
+  }
 }
 
 .research__more {
   font-size: 14px;
   line-height: 24px;
   color: @text-color-secondary;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

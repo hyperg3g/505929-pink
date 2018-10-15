@@ -3,44 +3,112 @@
   background-image: url("../../img/bg-back-mobile@1x.jpg");
 
   @media (min-width: @tablet-width) {
-    min-height: 618px;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-position: center;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 743px;
+
+    background-image: none;
+    background-color: transparent;
   }
 }
 
 .intro__wrap {
+  min-height: 733px;
+
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
     width: 620px;
+    min-height: 729px;
     margin: 0 auto;
 
     flex-direction: row-reverse;
-    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    min-height: 743px;
+    margin: 0 auto;
   }
 }
 
+.intro__background {
+  position: relative;
+  margin: 0 auto;
+
+  left: -32px;
+}
+
 .intro__downloads {
+  min-height: 214px;
+  padding-top: 27px;
+  padding-bottom: 30px;
+
   background-color: #1d2631;
 
   @media (min-width: @tablet-width) {
     width: 300px;
+    min-height: 415px;
+    margin-top: 202px;
+    padding: 0;
 
     background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 512px;
+    margin-top: 109px;
+
   }
 }
 
 .intro__center {
   width: 280px;
+  min-height: 214px;
   margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  .intro__download-btn {
+    margin-bottom: 29px;
+  }
+
+  .intro__link-list {
+    margin-bottom: 25px;
+  }
 
   @media (min-width: @tablet-width) {
     width: auto;
+    min-height: 240px;
+
     margin: 0;
+
+    .intro__download-btn {
+      margin-bottom: 42px;
+    }
+
+    .intro__link-list {
+      margin-bottom: 40px;
+      margin-left: 3px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 280px;
+
+    .intro__download-btn {
+      margin-bottom: 63px;
+    }
+
+    .intro__link-list {
+      margin-bottom: 57px;
+    }
   }
 }
 
@@ -51,21 +119,48 @@
   line-height: 48px;
   font-weight: 300;
   color: #ffffff;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
-    display: inline;
+    width: 195px;
+    margin: 0;
+    margin-left: 52px;
+    margin-bottom: 32px;
+
+    display: inline-block;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    margin: 0;
+    margin-bottom: 51px;
+
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 
 .intro__link-list {
   .list-reset();
 
+  min-height: 57px;
+
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 9px;
+  }
 }
 
 .intro__link {
   position: relative;
+
+  width: 47px;
+  height: 57px;
+
+  display: block;
 
   cursor: pointer;
 }
@@ -75,10 +170,11 @@
     content: "";
 
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 3px;
+    left: 15px;
 
     background-image: url("../../img/logo-apple.svg");
+    background-repeat: no-repeat;
     width: 47px;
     height: 57px;
   }
@@ -89,10 +185,11 @@
     content: "";
 
     position: absolute;
-    top: 0;
-    left: 50px;
+    top: 11px;
+    left: 2px;
 
     background-image: url("../../img/logo-android.svg");
+    background-repeat: no-repeat;
     width: 43px;
     height: 48px;
   }
@@ -103,18 +200,29 @@
     content: "";
 
     position: absolute;
-    top: 0;
-    left: 100px;
+    top: 16px;
+    left: -12px;
 
     background-image: url("../../img/logo-microsoft.svg");
+    background-repeat: no-repeat;
     width: 44px;
     height: 42px;
   }
 }
 
 .intro__note {
+  margin: 0;
+
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
   color: #ffffff;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+  }
 }

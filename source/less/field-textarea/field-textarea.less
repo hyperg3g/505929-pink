@@ -1,1 +1,25 @@
-/* Затычка для теста */
+.field-textarea {
+  min-height: 120px;
+}
+
+.field-textarea__input {
+  width: 276px;
+  height: 197px;
+  padding: 0;
+
+  border: none;
+  border: 2px solid #e5e5e5;
+
+  resize: none;
+
+  @media (min-width: @tablet-width) {
+    width: 496px;
+    height: 189px;
+    margin-left: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 816px;
+    height: 124px;
+  }
+}

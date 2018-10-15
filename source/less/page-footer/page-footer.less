@@ -1,13 +1,18 @@
 .page-footer__wrap {
   width: 280px;
-  min-height: 128px;
+  min-height: 204px;
   margin: 0 auto;
+  padding-top: 42px;
+  padding-bottom: 40px;
 
   display: flex;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
     width: 620px;
+    min-height: 54px;
+    padding-top: 36px;
+    padding-bottom: 37px;
 
     flex-direction: row;
     justify-content: space-between;
@@ -15,6 +20,9 @@
 
   @media (min-width: @desktop-width) {
     width: 940px;
+    min-height: 55px;
+    padding-top: 70px;
+    padding-bottom: 72px;
   }
 }
 
@@ -28,20 +36,93 @@
 
 .page-footer__contacts {
   width: 280px;
+  min-height: 326px;
   margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 13px;
 
   @media (min-width: @tablet-width) {
     width: 620px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: @desktop-width) {
     width: 940px;
+    margin-bottom: -25px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.page-footer__logo {
+  min-height: 40px;
+  margin-bottom: 37px;
+
+  display: block;
+
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-top: -5px;
+  }
+}
+
+.page-footer__social {
+  margin-left: 50px;
+  margin-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-left: -16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-left: 3px;
   }
 }
 
 .page-footer__copyright {
+  position: relative;
+
+  width: 130px;
+  min-height: 34px;
+  margin-left: 74px;
+
+  display: block;
+
   font-size: 14px;
   line-height: 18px;
   color: @text-color;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 155px;
+
+    font-size: 18px;
+  }
+}
+
+.page-footer__htmlacademy {
+  position: absolute;
+  top: -7px;
+  right: 0;
+
+  fill: @text-color-secondary;
+
+  &:hover {
+    fill: @text-color;;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
