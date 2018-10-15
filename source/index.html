@@ -12,41 +12,41 @@
 <body>
 
   <header class="page-header">
-    <div class="page-header__wrap">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Pink Logo">
-      </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">Открыть меню</button>
-        <div class="main-navigation__list">
-          <ul class="site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <div class="page-header--bg">
+      <div class="page-header__wrap page-header__wrap--nojs">
+        <a class="page-header__logo page-header__logo--closed">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Pink Logo">
+        </a>
+        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+          <button class="main-navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-navigation__list">
+            <ul class="site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
-  </header>
-
-  <main class="page-main">
-    <h1 class="visually-hidden">Пинк - жизнь в розовых тонах!</h1>
     <section class="intro">
       <div class="intro__wrap">
         <img class="intro__background" src="img/iphone-hand-mobile@1x.png" width="256" height="286" alt="Background Image">
         <div class="intro__downloads">
           <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
           <div class="intro__center">
-            <button class="intro__download-btn button--rounded" type="button">Скачать приложение</button>
+            <button class="intro__download-btn button button--rounded" type="button">Скачать приложение</button>
             <ul class="intro__link-list">
               <li class="intro__link-item">
                 <a class="intro__link intro__link--apple" href="https://www.apple.com/ru/">
@@ -69,6 +69,10 @@
         </div>
       </div>
     </section>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Пинк - жизнь в розовых тонах!</h1>
     <section class="offer">
       <div class="offer__wrap">
         <p class="offer__text">Устали от серости мегаполиса?</p>
@@ -98,11 +102,11 @@
     </section>
     <section class="research">
       <div class="research__wrap">
-        <img class="research__image" src="img/icon-timer.svg" width="298" height="346" alt="24 hours">
+        <div class="research__image"></div>
         <div class="research__wrap-text">
-          <h2 class="research__title">Эффект на 24 часа!</h2>
+          <h2 class="research__title">Эффект <span>&nbsp;</span> на 24 часа!</h2>
           <p class="research__text">
-            Британские ученые провели исследования и доказали, что положительный эффект
+            Британские ученые провели исследования и доказали, что положительный эффект <span>&nbsp;&nbsp;</span>
             от использования приложения длится целые сутки!
           </p>
           <a class="research__more" href="#">Узнать больше об исследовании</a>
@@ -126,9 +130,9 @@
         </ul>
       </div>
       <div class="reviews__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+        <input class="slider__toggle" type="radio" name="reviews-toggle" checked>
+        <input class="slider__toggle" type="radio" name="reviews-toggle">
+        <input class="slider__toggle" type="radio" name="reviews-toggle">
       </div>
     </section>
     <section class="price">
@@ -143,7 +147,7 @@
                   <span class="price__package-title">База</span>
                   <span class="price__package-cost">1,99 USD</span>
                 </th>
-                <th class="price__package">
+                <th class="price__package price__package--hit">
                   <span class="price__package-title">Стандарт</span>
                   <span class="price__package-cost">3,99 USD</span>
                 </th>
@@ -155,22 +159,40 @@
             </thead>
             <tbody class="price__table-body">
               <tr>
-                <td class="price__value">Розовый фильтр</td>
-                <td class="price__value price__value--empty">Розовый фильтр</td>
-                <td class="price__value price__value--empty">Розовый фильтр</td>
-                <td class="price__value price__value--empty">Розовый фильтр</td>
+                <td class="price__option">Розовый фильтр</td>
+                <td class="price__value price__value--yes ">
+                  <span class="price__value--empty">Розовый фильтр</span>
+                </td>
+                <td class="price__value price__value--yes">
+                  <span class="price__value--empty">Розовый фильтр</span>
+                </td>
+                <td class="price__value price__value--yes ">
+                  <span class="price__value--empty">Розовый фильтр</span>
+                </td>
               </tr>
               <tr>
-                <td class="price__value">Смайлики</td>
-                <td class="price__value price__value--empty">Смайлики</td>
-                <td class="price__value price__value--empty">Смайлики</td>
-                <td class="price__value price__value--empty">Смайлики</td>
+                <td class="price__option">Смайлики</td>
+                <td class="price__value price__value--no">
+                  <span class="price__value--empty">Смайлики</span>
+                </td>
+                <td class="price__value price__value--yes">
+                  <span class="price__value--empty">Смайлики</span>
+                </td>
+                <td class="price__value price__value--yes">
+                  <span class="price__value--empty">Смайлики</span>
+                </td>
               </tr>
               <tr>
-                <td class="price__value">Комментарии</td>
-                <td class="price__value price__value--empty">Комментарии</td>
-                <td class="price__value price__value--empty">Комментарии</td>
-                <td class="price__value price__value--empty">Комментарии</td>
+                <td class="price__option">Комментарии</td>
+                <td class="price__value price__value--no">
+                  <span class="price__value--empty">Комментарии</span>
+                </td>
+                <td class="price__value price__value--no">
+                  <span class="price__value--empty">Комментарии</span>
+                </td>
+                <td class="price__value price__value--yes">
+                  <span class="price__value--empty">Комментарии</span>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -191,19 +213,19 @@
         <ul class="contacts__list">
           <li class="contacts__item">
             <p class="contacts__text">
-              Звоните:
+              Звоните:<br>
               <a class="contacts__inner" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </p>
           </li>
           <li class="contacts__item">
             <p class="contacts__text">
-              Пишите:
+              Пишите:<br>
               <span class="contacts__inner">mail@htmlacademy.ru</span>
             </p>
           </li>
           <li class="contacts__item">
             <p class="contacts__text">
-              Приезжайте в гости:
+              Приезжайте в гости:<br>
               <span class="contacts__inner">ул. Большая Конюшенная, 19/8</span>
             </p>
           </li>
@@ -212,7 +234,7 @@
     </div>
     <div class="map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1413.3191236494145!2d30.32045672708604!3d59.93653812754346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1538839722768"
-        frameborder="0" style="border:0" allowfullscreen></iframe>
+        frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="page-footer__wrap page-footer__wrap--index">
       <a class="page-footer__logo" href="index.html">
@@ -231,11 +253,14 @@
       </div>
       <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
         Разработано
-        <img class="page-footer__htmlacademy" src="img/logo-htmlacademy.svg" width="27" height="35" alt="HTML Academy">
+        <svg class="page-footer__htmlacademy" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+          <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+        </svg>
       </a>
     </div>
   </footer>
 
+  <script src="js/main-nav-toggle.js"></script>
 </body>
 
 </html>
