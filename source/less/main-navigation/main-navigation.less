@@ -1,5 +1,129 @@
-.main-navigation__toggle {
+.main-navigation {
+  position: relative;
+
+  width: auto;
+  min-height: 256px;
+
   @media (min-width: @desktop-width) {
+    width: 620px;
+  }
+}
+
+.main-navigation--closed {
+  min-height: 0;
+
+  transition: all 100ms ease;
+
+  @media (max-width: @mobile-width-only), (max-width: @tablet-width-only) {
+    .main-navigation__list {
+      display: none;
+    }
+  }
+}
+
+.main-navigation--opened {
+  min-height: 256px;
+
+  @media (max-width: @mobile-width-only), (max-width: @tablet-width-only) {
+    .main-navigation__list {
+      display: block;
+    }
+  }
+}
+
+.main-navigation__toggle {
+  position: absolute;
+  top: -45px;
+  right: 20px;
+
+  display: block;
+  width: 50px;
+  height: 24px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  @media (min-width: @tablet-width) {
+    top: -62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-navigation--closed .main-navigation__toggle {
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50px;
+    height: 4px;
+
+    background-color: #ffffff;
+    box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+  }
+
+  &:hover::before {
+    background-color: #d22856;
+    box-shadow: 0 10px 0 0 rgb(210, 40, 86), 0 20px 0 0 rgb(210, 40, 86);
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+.main-navigation--opened .main-navigation__toggle {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 6px;
+    right: -4px;
+
+    width: 30px;
+    height: 5px;
+
+    background-color: #ffffff;
+    border-radius: 3px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: rgb(210, 40, 86);
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.main-navigation--nojs {
+  .main-navigation {
+    min-width: 256px;
+  }
+
+  .main-navigation__list {
+    display: block;
+  }
+
+  .main-navigation__toggle {
     display: none;
   }
 }

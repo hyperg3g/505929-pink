@@ -1,6 +1,8 @@
 .contest-form__title {
   width: 280px;
   margin: 0 auto;
+  margin-top: 45px;
+  margin-bottom: 34px;
 
   font-size: 14px;
   line-height: 30px;
@@ -9,25 +11,58 @@
 
   @media (min-width: @tablet-width) {
     width: 502px;
+    margin-top: 92px;
+    margin-bottom: 66px;
+
+    font-size: 18px;
   }
 
   @media (min-width: @desktop-width) {
     width: 770px;
+    margin-bottom: 79px;
+  }
+}
+
+.contest-form__title--note {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
   }
 }
 
 .contest-form__legend {
+  width: 220px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
   font-size: 14px;
   line-height: 18px;
   color: @text-color-secondary;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+}
+
+.contest-form__legend--comment {
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
 }
 
 .contest-form__legend--hidden {
   display: none;
 
   @media (min-width: @tablet-width) {
-    display: inline;
+    display: block;
   }
 }
 
@@ -36,6 +71,17 @@
   line-height: 30px;
   color: @text-color;
   text-transform: uppercase;
+  text-align: center;
+
+  &--text {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    &--text {
+      display: inline;
+    }
+  }
 }
 
 .contest-form__mark {
@@ -48,6 +94,12 @@
   @media (min-width: @tablet-width) {
     width: auto;
     background-color: #ffffff;
+  }
+
+  @media (min-width: @desktop-width) {
+    &:nth-of-type(2) {
+      width: 100%;
+    }
   }
 }
 
@@ -81,6 +133,121 @@
   }
 }
 
+.contest-form__name {
+  margin-bottom: 40px;
+  padding: 0;
+
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 435px;
+  }
+}
+
+.contest-form__achievments {
+  margin-top: 36px;
+  margin-bottom: 43px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 11px;
+    padding-top: 43px;
+    padding-bottom: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 936px;
+    padding-bottom: 13px;
+
+    &--container {
+      margin-left: 118px;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+.contest-form__contacts {
+  margin-top: 32px;
+  margin-bottom: 40px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 21px;
+    padding-top: 32px;
+    padding-bottom: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    margin-top: 37px;
+    padding-bottom: 13px;
+
+    &--container {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+.contest-form__os-type {
+  margin-top: 38px;
+  margin-bottom: 37px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+    padding-top: 49px;
+    padding-bottom: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 431px;
+    margin: 0;
+    margin-top: -9px;
+    padding-top: 51px;
+    padding-bottom: 49px;
+  }
+}
+
+.contest-form__comment {
+  margin-top: 38px;
+  margin-bottom: 48px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 67px;
+    padding-top: 29px;
+    padding-bottom: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    margin-bottom: 65px;
+    padding-top: 26px;
+    padding-bottom: 43px;
+  }
+}
+
+.contest-form__send-btn {
+  width: 280px;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
 .contest-form__name--order {
   order: -3;
 }
@@ -95,12 +262,19 @@
 
 .contest-form__send {
   @media (min-width: @tablet-width) {
-    width: 100%;
+    margin-bottom: 36px;
 
     display: flex;
     justify-content: space-between;
 
     border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    margin-bottom: 0;
+
+    justify-content: space-between;
   }
 }
 
@@ -110,30 +284,4 @@
   @media (min-width: @tablet-width) {
     order: 0;
   }
-}
-
-@media (min-width: @desktop-width) {
-  .contest-form__name {
-    width: 430px;
-  }
-
-  .contest-form__os-type {
-    width: 430px;
-  }
-
-  .contest-form__contacts {
-    width: 100%;
-  }
-
-  .contest-form__achievments {
-    width: 912px;
-  }
-
-  .contest-form__comment {
-    width: 100%;
-  }
-}
-
-.contest-form__name {
-  border: none;
 }
