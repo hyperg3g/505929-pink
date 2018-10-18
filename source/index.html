@@ -15,7 +15,11 @@
     <div class="page-header--bg">
       <div class="page-header__wrap page-header__wrap--nojs">
         <a class="page-header__logo page-header__logo--closed">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Pink Logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Pink Logo">
+          </picture>
         </a>
         <nav class="main-navigation main-navigation--closed main-navigation--nojs">
           <button class="main-navigation__toggle" type="button">
@@ -42,7 +46,6 @@
     </div>
     <section class="intro">
       <div class="intro__wrap">
-        <img class="intro__background" src="img/iphone-hand-mobile@1x.png" width="256" height="286" alt="Background Image">
         <div class="intro__downloads">
           <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
           <div class="intro__center">
