@@ -15,7 +15,11 @@
     <div class="page-header--bg">
       <div class="page-header__wrap">
         <a class="page-header__logo page-header__logo--closed" href="index.html">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="22" alt="Pink Logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Pink Logo">
+          </picture>
         </a>
         <nav class="main-navigation main-navigation--closed">
           <button class="main-navigation__toggle" type="button">

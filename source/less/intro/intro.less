@@ -1,10 +1,21 @@
 .intro {
   background-color: #1d2631;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: 100% 462px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center;
+    background-size: 1200px 729px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -22,26 +33,44 @@
   justify-content: flex-end;
   flex-direction: column;
 
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-size: 258px 286px;
+  background-repeat: no-repeat;
+  background-position: center 175px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+  }
+
   @media (min-width: @tablet-width) {
     width: 620px;
     min-height: 729px;
     margin: 0 auto;
 
     flex-direction: row-reverse;
+
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-size: 700px 545px;
+    background-position: center bottom;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 940px;
     min-height: 743px;
     margin: 0 auto;
+
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-size: 1050px 645px;
+    background-position: 16px bottom;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+    }
   }
-}
-
-.intro__background {
-  position: relative;
-  margin: 0 auto;
-
-  left: -32px;
 }
 
 .intro__downloads {
@@ -50,6 +79,8 @@
   padding-bottom: 30px;
 
   background-color: #1d2631;
+
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     width: 300px;
