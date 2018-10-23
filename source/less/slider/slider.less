@@ -17,3 +17,64 @@
   border: 3px solid @text-color;
   background-color: #ffffff;
 }
+
+.slider__control {
+  position: absolute;
+  bottom: 90px;
+  left: 430px;
+
+  width: 100px;
+}
+
+.slider__button {
+  width: 22px;
+  height: 41px;
+
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.slider__button--left {
+  position: absolute;
+  top: -192px;
+  left: -430px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    left: 6px;
+
+    width: 30px;
+    height: 30px;
+
+    border-left: 2px solid #b5b9be;
+    border-bottom: 2px solid #b5b9be;
+
+    transform: rotate(45deg);
+  }
+}
+
+.slider__button--right {
+  position: absolute;
+  top: -192px;
+  right: -410px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    right: 6px;
+
+    width: 30px;
+    height: 30px;
+
+    border-right: 2px solid #b5b9be;
+    border-bottom: 2px solid #b5b9be;
+
+    transform: rotate(-45deg);
+  }
+}
