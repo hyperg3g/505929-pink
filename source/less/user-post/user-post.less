@@ -8,11 +8,12 @@
   @media (min-width: @tablet-width) {
     width: 246px;
     min-height: 126px;
-    padding: 29px 27px;
+    padding: 0 27px;
+    padding-top: 22px;
+    padding-bottom: 7px;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 }
 
@@ -59,7 +60,6 @@
 .user-post__like {
   position: relative;
 
-  display: block;
   margin-left: 50px;
   padding-bottom: 21px;
 
@@ -132,5 +132,22 @@
 
   @media (min-width: @desktop-width) {
     width: 940px;
+    min-height: 96px;
+    margin-top: -3px;
+
+    .user-post__title {
+      margin-bottom: 0;
+    }
+
+    .user-post__comment {
+      min-height: 40px;
+      padding: 0;
+      margin-top: -9px;
+      margin-bottom: 0;
+    }
+
+    .user-post__like {
+      margin-bottom: 0;
+    }
   }
 }
