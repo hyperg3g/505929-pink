@@ -3,22 +3,29 @@
 }
 
 .field-textarea__input {
-  width: 276px;
-  height: 197px;
+  width: 258px;
+  height: 183px;
+  margin: 0;
   padding: 0;
+  padding-top: 14px;
+  padding-left: 18px;
 
   border: 2px solid #e5e5e5;
-
+  outline: none;
   resize: none;
 
+  font-size: 18px;
+  line-height: 30px;
+  color: @text-color;
+
   @media (min-width: @tablet-width) {
-    width: 496px;
-    height: 189px;
+    width: 478px;
+    height: 175px;
     margin-left: 58px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 816px;
-    height: 124px;
+    width: 798px;
+    height: 110px;
   }
 }

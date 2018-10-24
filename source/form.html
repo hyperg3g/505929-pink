@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -66,13 +66,13 @@
           <div class="field-text">
             <label class="field-text__name">
               <span class="field-text__text field-text__text--surname">Фамилия: </span>
-              <input class="field-text__input" type="text" placeholder="Укажите фамилию *">
+              <input class="field-text__input" type="text" placeholder="Укажите фамилию *" required>
             </label>
           </div>
           <div class="field-text">
             <label class="field-text__name">
               <span class="field-text__text field-text__text--name">Имя: </span>
-              <input class="field-text__input" type="text" placeholder="Введите ваше имя *">
+              <input class="field-text__input" type="text" placeholder="Введите ваше имя *" required>
             </label>
           </div>
           <div class="field-text">
@@ -117,7 +117,7 @@
             <div class="field-text field-text--tablet">
               <label class="field-text__name field-text__name--tablet field-text__name--mail">
                 <span class="field-text__text">Адрес почты</span>
-                <input class="field-text__input" type="text" placeholder="Введите почту *">
+                <input class="field-text__input" type="text" placeholder="Введите почту *" required>
               </label>
             </div>
           </div>
@@ -228,6 +228,7 @@
   </div>
 
   <script src="js/main-nav-toggle.js"></script>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>

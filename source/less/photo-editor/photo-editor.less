@@ -279,9 +279,13 @@
   height: 14px;
   padding: 0;
 
+
+  background-color: #f2f2f2;
+  outline: none;
+
   &::-moz-range-thumb {
-    width: 11px;
-    height: 11px;
+    width: 10px;
+    height: 10px;
 
     background-color: #ffffff;
     border: 2px solid @text-color-secondary;
@@ -295,6 +299,35 @@
 
   &::-moz-range-track {
     height: 2px;
+    background-color: @text-color;
+  }
+
+  &::-ms-thumb {
+    width: 10px;
+    height: 10px;
+
+    background-color: #ffffff;
+    border: 2px solid @text-color-secondary;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &:active::-ms-thumb {
+    background-color: @text-color-secondary;
+  }
+
+  &::-ms-track {
+    height: 2px;
+
+    background: transparent;
+    border-color: transparent;
+    border: none;
+    color: transparent;
+
+    background-color: @text-color;
+  }
+
+  &::-ms-fill-lower {
     background-color: @text-color;
   }
 
