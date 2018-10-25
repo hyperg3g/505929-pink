@@ -30,6 +30,14 @@
     border-radius: 50%;
   }
 
+  &:hover::before {
+    border-color: @text-color;
+  }
+
+  &:active::before {
+    border-color: @text-color-secondary;
+  }
+
   @media (min-width: @tablet-width) {
     margin-left: 47px;
 

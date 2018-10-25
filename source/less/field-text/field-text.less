@@ -56,10 +56,20 @@
       margin-top: 10px;
       margin-left: 20px;
     }
+
+    .field-text__input {
+      width: 435px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
+
+    justify-content: center;
+
+    .field-text__input {
+      width: 290px;
+    }
   }
 }
 
@@ -82,6 +92,12 @@
       background-position: center center;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      right: 0;
+    }
+  }
 }
 
 .field-text__name--mail {
@@ -101,6 +117,12 @@
       background-size: 18px 13px;
       background-repeat: no-repeat;
       background-position: center center;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      right: 0;
     }
   }
 }
@@ -138,29 +160,30 @@
 }
 
 .field-text__input {
-  width: 276px;
-  height: 59px;
+  width: 256px;
+  height: 57px;
+  margin-top: 5px;
+  padding-left: 20px;
 
   border: 2px solid #e5e5e5;
+  border-radius: 2px;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: @text-color;
+  outline: none;
 
   &::placeholder {
-    margin: 0;
-    padding: 0;
-
-    font-size: 18px;
-    line-height: 30px;
     color: @text-color;
     opacity: 1;
   }
 
-  &:placeholder-shown {
-    margin: 0;
-    padding: 0;
-    margin-top: 5px;
+  &:hover {
+    border-color: @text-color;
+  }
 
-    font-size: 18px;
-    line-height: 30px;
-    color: @text-color;
+  &:focus {
+    border-color: @text-color-secondary;
   }
 
   @media (min-width: @tablet-width) {
