@@ -11,6 +11,7 @@
   color: #ffffff;
 
   cursor: pointer;
+  outline: none;
 
   @media (min-width: @desktop-width) {
     font-size: 21px;
@@ -18,17 +19,8 @@
 }
 
 .button--rounded {
-  border: 3px solid #ffffff;
+  border: 3px solid;
   border-radius: 27px;
-
-  &:hover {
-    background-color: #ffffff;
-    color: @text-color-secondary;
-  }
-
-  &:active {
-    color: rgba(210, 40, 86, 0.3);
-  }
 }
 
 .button--square {
@@ -38,4 +30,8 @@
   border-radius: 3px;
 
   text-transform: uppercase;
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }

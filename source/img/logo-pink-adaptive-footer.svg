@@ -8,9 +8,9 @@
       fill: #d22856;
     }
 
-    .page-footer__logo-image:focus {
+    .page-footer__logo-image:active {
       fill: #283645;
-      opacity: 1;
+      fill-opacity: 0.3;
     }
 
     .page-footer__logo-pink-desktop {
