@@ -12,13 +12,15 @@
     background-position: center 0;
     background-size: 2560px 853px;
 
-    &--bg {
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
+  }
+}
+
+.page-header__background {
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
