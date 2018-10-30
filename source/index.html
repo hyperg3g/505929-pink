@@ -7,6 +7,12 @@
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body>
@@ -48,10 +54,11 @@
         <div class="intro__downloads">
           <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
           <div class="intro__center">
-            <button class="intro__download-btn button button--rounded" type="button">Скачать приложение</button>
+            <a class="intro__download-btn button button--rounded" href="https://www.apple.com/itunes/">Скачать
+              приложение</a>
             <ul class="intro__link-list">
               <li class="intro__link-item">
-                <a class="intro__link intro__link--apple" href="https://www.apple.com/ru/">
+                <a class="intro__link intro__link--apple" href="https://www.apple.com/itunes/">
                   <span class="visually-hidden">Apple Store</span>
                 </a>
               </li>
@@ -108,7 +115,7 @@
         <div class="research__wrap-text">
           <h2 class="research__title">Эффект <span>&nbsp;</span> на 24 часа!</h2>
           <p class="research__text">
-            Британские ученые провели исследования и доказали, что положительный эффект <span>&nbsp;&nbsp;</span>
+            Британские ученые провели исследования и доказали,<em>&nbsp;&nbsp;</em> что положительный эффект <span>&nbsp;&nbsp;</span>
             от использования приложения длится целые сутки!
           </p>
           <a class="research__more" href="#">Узнать больше об исследовании</a>
@@ -147,16 +154,16 @@
             </blockquote>
           </li>
         </ul>
-      <div class="reviews__toggles slider__toggles">
-        <button class="slider__toggle slider__toggle--active" type="button"></button>
-        <button class="slider__toggle" type="button"></button>
-        <button class="slider__toggle" type="button"></button>
+        <div class="reviews__toggles slider__toggles">
+          <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">Отзыв №1</span></button>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">Отзыв №2</span></button>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">Отзыв №3</span></button>
+        </div>
+        <div class="reviews__control slider__control">
+          <button class="slider__button slider__button--left"><span class="visually-hidden">Предыдущий отзыв</span></button>
+          <button class="slider__button slider__button--right"><span class="visually-hidden">Следующий отзыв</span></button>
+        </div>
       </div>
-      <div class="reviews__control slider__control">
-        <button class="slider__button slider__button--left"></button>
-        <button class="slider__button slider__button--right"></button>
-      </div>
-    </div>
     </section>
     <section class="price">
       <h2 class="visually-hidden">Наши цены</h2>
@@ -221,9 +228,10 @@
           </table>
         </div>
         <div class="price__toggles slider__toggles">
-          <button class="slider__toggle" type="button"></button>
-          <button class="slider__toggle slider__toggle--active" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">Пакет "База"</span></button>
+          <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">Пакет
+              "Стандарт"</span></button>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">Пакет "Анлим"</span></button>
         </div>
       </div>
     </section>
@@ -256,7 +264,8 @@
       </div>
     </div>
     <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1413.3191236494145!2d30.32045672708604!3d59.93653812754346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1538839722768" allowfullscreen=""></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1413.3191236494145!2d30.32045672708604!3d59.93653812754346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1538839722768"
+        allowfullscreen=""></iframe>
     </div>
     <div class="page-footer__wrap page-footer__wrap--index">
       <a class="page-footer__logo" href="index.html">

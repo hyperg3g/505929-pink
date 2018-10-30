@@ -17,7 +17,9 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 220px;
     margin: 0;
+    margin-right: 60px;
 
     &:nth-of-type(1),
     &:nth-of-type(2) {
@@ -35,7 +37,9 @@
       width: 150px;
     }
 
-    &:nth-of-type(even) {
+    &:nth-of-type(2),
+    &:nth-of-type(4),
+    &:nth-of-type(6) {
       order: 1;
     }
   }
@@ -81,7 +85,11 @@
 }
 
 .field-checkbox__input {
-  display: none;
+  &:focus + .field-checkbox__text {
+    &::before {
+      border-color: @text-color-secondary;
+    }
+  }
 
   &:checked + .field-checkbox__text {
     &::after {

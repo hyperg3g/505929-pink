@@ -15,6 +15,8 @@
   line-height: 30px;
   color: @text-color;
 
+  cursor: pointer;
+
   &::before {
     content: "";
 
@@ -52,7 +54,11 @@
 }
 
 .field-radio__input {
-  display: none;
+  &:focus + .field-radio__text {
+    &::before {
+      border-color: @text-color-secondary;
+    }
+  }
 
   &:checked + .field-radio__text {
     &::after {

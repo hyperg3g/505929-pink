@@ -7,6 +7,12 @@
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body>
@@ -60,7 +66,7 @@
           <div class="field-text">
             <label class="field-text__name">
               <span class="field-text__text field-text__text--surname">Фамилия: </span>
-              <input class="field-text__input" type="text" placeholder="Укажите фамилию *" required="">
+              <input class="field-text__input" type="text" placeholder="Укажите фамилию *" required>
             </label>
           </div>
           <div class="field-text">
@@ -81,19 +87,19 @@
             <legend class="contest-form__legend">С каким приложением путешествовали?</legend>
             <div class="field-radio">
               <label class="field-radio__name">
-                <input class="field-radio__input" type="radio" name="os-type" value="iOS" checked="">
+                <input class="field-radio__input visually-hidden" type="radio" name="os-type" value="iOS" checked="">
                 <span class="field-radio__text">Pink для iOS</span>
               </label>
             </div>
             <div class="field-radio">
               <label class="field-radio__name">
-                <input class="field-radio__input" type="radio" name="os-type" value="Android">
+                <input class="field-radio__input visually-hidden" type="radio" name="os-type" value="Android">
                 <span class="field-radio__text">Pink на Android</span>
               </label>
             </div>
             <div class="field-radio">
               <label class="field-radio__name">
-                <input class="field-radio__input" type="radio" name="os-type" value="Windows">
+                <input class="field-radio__input visually-hidden" type="radio" name="os-type" value="Windows">
                 <span class="field-radio__text">Windows Phone</span>
               </label>
             </div>
@@ -122,37 +128,37 @@
             <div class="contest-form__achievments-container">
               <div class="field-checkbox">
                 <label class="field-checkbox__name">
-                  <input class="field-checkbox__input" type="checkbox" checked="">
+                  <input class="field-checkbox__input visually-hidden" type="checkbox" checked="">
                   <span class="field-checkbox__text">Сделал селфи с акулой</span>
                 </label>
               </div>
               <div class="field-checkbox">
                 <label class="field-checkbox__name">
-                  <input class="field-checkbox__input" type="checkbox" checked="">
+                  <input class="field-checkbox__input visually-hidden" type="checkbox" checked="">
                   <span class="field-checkbox__text">Обгорел на пляже</span>
                 </label>
               </div>
               <div class="field-checkbox">
                 <label class="field-checkbox__name">
-                  <input class="field-checkbox__input" type="checkbox">
+                  <input class="field-checkbox__input visually-hidden" type="checkbox">
                   <span class="field-checkbox__text">Видел Чака Норриса</span>
                 </label>
               </div>
               <div class="field-checkbox">
                 <label class="field-checkbox__name">
-                  <input class="field-checkbox__input" type="checkbox">
+                  <input class="field-checkbox__input visually-hidden" type="checkbox">
                   <span class="field-checkbox__text">Накупил сувениров</span>
                 </label>
               </div>
               <div class="field-checkbox">
                 <label class="field-checkbox__name">
-                  <input class="field-checkbox__input" type="checkbox" checked="">
+                  <input class="field-checkbox__input visually-hidden" type="checkbox" checked="">
                   <span class="field-checkbox__text">Удержал башню</span>
                 </label>
               </div>
               <div class="field-checkbox">
                 <label class="field-checkbox__name">
-                  <input class="field-checkbox__input" type="checkbox">
+                  <input class="field-checkbox__input visually-hidden" type="checkbox">
                   <span class="field-checkbox__text">Разгромил отель</span>
                 </label>
               </div>
