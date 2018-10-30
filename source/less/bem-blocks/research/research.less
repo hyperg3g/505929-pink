@@ -22,6 +22,7 @@
 
   @media (min-width: @desktop-width) {
     width: 940px;
+    padding-top: 0;
     padding-bottom: 64px;
   }
 }
@@ -132,12 +133,20 @@
   line-height: 24px;
   color: @text-color;
 
+  em {
+    display: none;
+  }
+
   @media (min-width: @desktop-width) {
     width: 527px;
     margin-bottom: 30px;
 
     font-size: 18px;
     line-height: 30px;
+
+    em {
+      display: inline;
+    }
 
     span {
       display: none;
