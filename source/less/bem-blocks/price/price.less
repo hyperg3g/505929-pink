@@ -141,6 +141,18 @@
       left: 5px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/bg-hit.svg");
+    background-size: 74px 73px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    &::after {
+      top: 10px;
+      left: 10px;
+    }
+  }
 }
 
 .price__package--empty {
@@ -198,6 +210,10 @@
   @media (min-width: @tablet-width) {
     width: 152px;
     height: 45px;
+
+    &:first-child {
+      padding-left: 15px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -206,6 +222,10 @@
     padding-left: 20px;
 
     font-size: 18px;
+
+    &:first-child {
+      padding-left: 20px;
+    }
   }
 }
 

@@ -143,8 +143,16 @@
   color: @text-color;
   text-align: center;
 
+  span {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
     text-align: start;
+
+    span {
+      display: inline;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -155,6 +163,10 @@
     font-size: 18px;
     line-height: 30px;
     text-align: center;
+
+    span {
+      display: none;
+    }
   }
 }
 
